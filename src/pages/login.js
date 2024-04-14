@@ -13,7 +13,7 @@ const Login = () => {
     const password = document.getElementById('password').value;
 
     try {
-      const response = await axios.post('http://localhost:3001/login', {
+      const response = await axios.post('https://aliceserver.vercel.app/login', {
         email,
         password
       });
